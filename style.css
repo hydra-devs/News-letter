@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/public/img/Background.png);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border-radius: 5px;
+  margin: auto;
+}
+.news-content {
+  background-color: white;
+  padding: 0px 20px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  border-radius: 5px 5px 0px 0px;
+  padding: 30px 70px;
+  background-color: rgb(66, 66, 232);
+  background-image: url(/public/img/Pattern.png);
+}
+
+.news-desc {
+  font-size: xx-small;
+  color: rgb(102, 99, 99);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 10px 20px;
+}
+.form input {
+  height: 30px;
+  border-radius: 3px;
+}
+.email_input {
+  width: 69%;
+  padding: 5px 10px;
+  font-size: xx-small;
+  border: rgba(161, 159, 159, 0.321) 1px solid;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(119, 118, 118, 0.143);
+}
+.submit {
+  width: 30%;
+  background-color: rgb(66, 66, 232);
+  border: rgba(161, 159, 159, 0.321) 1px solid;
+
+  color: white;
+  font-size: x-small;
+  font-weight: bold;
+}
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.form-disc {
+  font-size: xx-small;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(102, 99, 99);
+  margin: 10px 0px;
+  text-align: left;
+}
+.form-review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 15px;
+}
+.review-profile {
+  display: flex;
+}
+.info {
+  line-height: 0.5;
+  margin-top: 6px;
+  margin-left: 5px;
+}
+.info p {
+  text-align: left;
+  font-size: x-small;
+}
+
+.review_text {
+  font-size: x-small;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(102, 99, 99);
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    background-image: none;
+  }
+  .container {
+    width: 100%;
+  }
+}
